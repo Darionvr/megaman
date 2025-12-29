@@ -20,11 +20,14 @@ export const Navbar = () => {
                     ))}
                 </ul>
             </div>
-            <div className={styles.preorder}>
-                <a href="#">
+            <div className={styles.preorder_container}>
+                <div className={styles.preorder}>
+                     <a href="#">
                     <span> Pre-order Now</span>
                     <span> Prepare For Launch!</span>
-                </a>
+                </a> 
+                </div>
+              
             </div>
         </nav>
     )

@@ -1,6 +1,10 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
 }
 
 
@@ -13,6 +17,7 @@
     margin-top: min(.8vw,16px);
     width: fit-content ;
     background: linear-gradient(90deg, rgba(32, 32, 32, .4) 51.44%, transparent 55.77%);
+    padding: .5vw;
 
     li {
         width: min(7.8vw, 150px);
@@ -25,7 +30,11 @@
         width: 100%;
     }
 }
-
+.preorder_container{
+        position: fixed;
+    top: 0;
+    right: 0;
+}
 .preorder {
     height: min(5.5vw, 127px);
     width: fit-content;
