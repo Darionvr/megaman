@@ -1,0 +1,95 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.platforms ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5vw;
+    align-items: center;
+    margin-bottom: min(1vw,20px);
+    margin-top: min(.8vw,16px);
+    width: fit-content ;
+    background: linear-gradient(90deg, rgba(32, 32, 32, .4) 51.44%, transparent 55.77%);
+
+    li {
+        width: min(7.8vw, 150px);
+        height: min(1.6vw, 32px);
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.preorder {
+    height: min(5.5vw, 127px);
+    width: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    padding: min(.4vw, 8px) min(.8vw, 16px);
+
+}
+
+.preorder a {
+    width: min(21.25vw, 408px);
+    height: min(5vw, 96px);
+    background-image: url('/images/buybtn_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: min(1.25vw, 24px);
+    line-height: 1.2;
+    position: relative;
+    overflow: hidden;
+    margin-left: 1vw;
+    box-shadow: min(.2vw, 4px) min(.2vw, 4px) 0 0 rgba(0, 0, 0, .45);
+
+
+}
+
+.preorder a::after {
+    animation: shine 2s linear 0s infinite;
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 25%, rgba(255, 183, 116, .8) 50%, hsla(0, 0%, 100%, 0) 75%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transform: skewX(-15deg);
+    width: 100%;
+}
+
+.preorder::before {
+    content: "";
+    width: 100%;
+    height: min(6.5vw, 127px);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('/images/gnav_bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
