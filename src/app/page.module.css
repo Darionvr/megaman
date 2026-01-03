@@ -3,7 +3,10 @@
   min-height: 100vh;
   font-family: var(--font-geist-sans);
   background-image: url(/images/bg.jpg);
-  background-size:  contain;
+  background-repeat: no-repeat;
+  background-size:  cover;
+
+  background-attachment: fixed;
 }
 
 

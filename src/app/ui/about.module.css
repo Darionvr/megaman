@@ -38,6 +38,7 @@
     width: min(50.6vw, 972px);
     padding: min(2.8vw, 55px) 0;
     margin-inline: auto;
+    margin-top: 5vw;
 }
 
 .wrap::before {
