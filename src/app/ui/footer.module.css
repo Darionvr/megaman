@@ -1,0 +1,55 @@
+.footer {
+    position: relative;
+    padding: 4.1vw 0 0;
+    overflow: hidden;
+    margin-top: 8vh;
+}
+
+.title_footer {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    padding: 1em 2em;
+
+    img {
+        height: 25px;
+    }
+}
+
+.title_footer ul li {
+    margin-right: 1vw;
+    color: #FFF;
+    font-size: 11px;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.5;
+        display: inline-block;
+ 
+}
+
+.title_footer ul li::before {
+    color: #FED100;
+    content: "\25b8";
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 0;
+    margin-right: .15em;
+    position: relative;
+}
+
+.title_footer::after{
+        content: "";
+    display: block;
+    width: 100vw;
+    height: 3.3333333333vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: 0;
+    background-image: url(/images/mv_bottom.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% auto;
+}

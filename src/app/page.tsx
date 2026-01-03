@@ -4,6 +4,8 @@ import { Hero } from "./ui/hero-section";
 import { About } from "./ui/about-section";
 import { Online } from "./ui/online-section";
 import { Characters } from "./ui/characters";
+import { Footer } from "./ui/footer";
+
 
 export default function Home() {
   return (
@@ -18,6 +20,7 @@ export default function Home() {
 
        
       </main>
+      <Footer/>
     </div>
   );
 }
