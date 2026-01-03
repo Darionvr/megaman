@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Geo Stelar & Omega-Xis (Mega)",
+    "description": "The protagonists of the journey. <br> Geo is a fifth-grader who dreams of becoming an astronaut like his father, but swore to never go to school again after his father was lost at space. <br> A mysterious device sparks his encounter with Omega-Xis.",
+    "picture": "pic_character01.webp",
+    "backgroundColor": "#0072ff",
+    "thumbnail": "thumb_character01.png"
+  },
+  {
+    "id": 2,
+    "name": "Mega Man",
+    "description": "The fusion of Geo and Omega-Xis made of EM waves. <br> This form allows Mega Man to explore the Wave World.",
+    "picture": "pic_character11.webp",
+    "backgroundColor": "#009",
+    "thumbnail": "thumb_character11.png"
+  },
+  {
+    "id": 3,
+    "name": "Sonia Strum",
+    "description": "A musician whose melodies light up the hearts of her massive teenage fan base. <br> Sonia's outward appearance as a shining star of joy hides a grief-stricken heart aching from the tragic loss of her mother.",
+    "picture": "pic_character02.webp",
+    "backgroundColor": "#ec4d5d",
+    "thumbnail": "thumb_character02.png"
+  },
+  {
+    "id": 4,
+    "name": "Luna Platz",
+    "description": "Class president and queen bee of Geo and his classmates. <br> Luna's bossy attitude belies her caring of those around her. <br> Her heart can't help but flutter at the thought of Mega Man.",
+    "picture": "pic_character03.webp",
+    "backgroundColor": "#fccd10",
+    "thumbnail": "thumb_character03.png"
+  },
+  {
+    "id": 5,
+    "name": "Bud Bison",
+    "description": "A classmate of Geo who is eager to fulfill the needs of both his friends and his stomach. <br> No obstacle is a match for Bud's bullish spirit when his favorite dish—ginger beef—is on the line.",
+    "picture": "pic_character04.webp",
+    "backgroundColor": "#e65000",
+    "thumbnail": "thumb_character04.png"
+  }
+]

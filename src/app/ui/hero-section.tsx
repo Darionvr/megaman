@@ -46,13 +46,13 @@ export const Hero = () => {
                                 <a href="#">Nintendo eShop</a>
                             </li>
                             <li>
-                                <a href="#">Nintendo eShop</a>
+                                <a href="#">PlayStation Store</a>
                             </li>
                             <li>
-                                <a href="#">Nintendo eShop</a>
+                                <a href="#">Microsoft Store</a>
                             </li>
                             <li>
-                                <a href="#">Nintendo eShop</a>
+                                <a href="#">Steam Store</a>
                             </li>
                         </ul>
                     </div>

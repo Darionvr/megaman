@@ -13,9 +13,9 @@
     list-style-type: none;
     gap: 1.5vw;
     align-items: center;
-    margin-bottom: min(1vw,20px);
-    margin-top: min(.8vw,16px);
-    width: fit-content ;
+    margin-bottom: min(1vw, 20px);
+    margin-top: min(.8vw, 16px);
+    width: fit-content;
     background: linear-gradient(90deg, rgba(32, 32, 32, .4) 51.44%, transparent 55.77%);
     padding: .5vw;
 
@@ -30,11 +30,13 @@
         width: 100%;
     }
 }
-.preorder_container{
-        position: fixed;
+
+.preorder_container {
+    position: fixed;
     top: 0;
     right: 0;
 }
+
 .preorder {
     height: min(5.5vw, 127px);
     width: fit-content;
@@ -64,7 +66,12 @@
     overflow: hidden;
     margin-left: 1vw;
     box-shadow: min(.2vw, 4px) min(.2vw, 4px) 0 0 rgba(0, 0, 0, .45);
+    font-family:  "BIZ UDPGothic", sans-serif;
+    font-weight: 700;
 
+    span:last-child {
+        font-size: min(.8vw, 19px);
+    }
 
 }
 

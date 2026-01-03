@@ -1,0 +1,62 @@
+.title {
+    margin-top: 5rem;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    height: min(5.05vw, 97px);
+    align-items: center;
+}
+
+.left_line,
+.right_line {
+    width: 100%;
+    height: min(5.05vw, 97px);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto 100%;
+}
+
+.left_line {
+    background-image: url(/images/bg_h2_left.svg);
+    background-position: 100%;
+}
+
+.right_line {
+    background-image: url(/images/bg_h2_right.svg);
+    background-position: 0;
+}
+
+.text {
+    position: relative;
+    width: fit-content;
+    height: min(5.06vw, 97px);
+}
+
+.text span {
+
+    background: linear-gradient(0deg, #ffc100 35%, #ffd245 36%, #ffd245 64%, #ffc100 65%);
+    background-clip: text;
+    color: transparent;
+    font-size: min(3.3vw, 64px);
+    letter-spacing: min(.2vw, 4px);
+    line-height: 1;
+    padding: 0;
+    font-family: "BIZ UDPGothic", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% + 2px);
+    height: min(1.04vw, 20px);
+    bottom: 0;
+    left: -1px;
+    background-image: url(/images/bg_h2_center.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 100%;
+}

@@ -1,0 +1,175 @@
+.online_section {
+    position: relative;
+    background: url(/images/bg_online.png) no-repeat top;
+}
+
+
+.wrap {
+    position: relative;
+    width: min(36.3vw, 697px);
+    min-height: min(13vw, 250px);
+    margin-inline: auto;
+    display: grid;
+    align-items: center;
+}
+
+.img_left {
+    width: min(12.2916666667vw, 236px);
+    height: min(21.875vw, 420px);
+    bottom: 30px;
+    left: -40%;
+    position: absolute;
+    z-index: 2;
+}
+
+.denpakun {
+    animation: move-animation 1.5s ease-in-out infinite alternate;
+    animation-delay: .1s;
+}
+
+@keyframes move-animation {
+    0% {
+        transform: translateY(0);
+
+    }
+
+    100% {
+        transform: translateY(30px);
+    }
+
+}
+
+.denpakun img {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.denpakun_full {
+    z-index: 1;
+
+}
+
+.denpakun_shadow1 {
+    z-index: -2;
+}
+
+.denpakun_shadow2 {
+    z-index: -3;
+}
+
+.denpakun_ring1 {
+    z-index: -1;
+    animation: ring-animation 1.6s linear infinite;
+    animation-delay: .2s;
+}
+
+.denpakun_ring2 {
+    z-index: -1;
+    animation: ring-animation 1.6s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes ring-animation {
+    0% {
+        transform: translate(4%, 50%) scale(.2);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-4%) scale(1);
+        opacity: 0;
+    }
+
+}
+
+.text {
+    position: relative;
+    width: 86%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: min(1.5vw, 30px);
+    font-size: min(.9vw, 18px);
+    letter-spacing: min(.015rem, 1.5px);
+    color: #ffff;
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-weight: 700;
+    font-size: min(.9375vw, 18px);
+}
+
+.img_right {
+    width: min(16.6666666667vw, 320px);
+    height: min(18.3854166667vw, 353px);
+    bottom: 0;
+    right: -50%;
+    position: absolute;
+    z-index: 2;
+    position: absolute;
+    animation: card-animation 4s ease-in-out infinite alternate;
+    transform-origin: center;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+@keyframes card-animation {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+
+}
+
+.img_list {
+    width: min(51.6vw, 992px);
+    margin: min(2vw, 40px) auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: min(1.5vw, 30px);
+
+    div {
+        width: calc(50% - min(.78vw, 15px));
+        cursor: pointer;
+        box-shadow: 4px 4px 0 0 rgba(0, 0, 0, .45);
+        position: relative;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+.img_list div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: min(2.7vw, 52px);
+    height: min(1.25vw, 24px);
+    right: 0;
+    bottom: 5px;
+    background: url(/images/icon_zoom.svg) no-repeat 50%;
+    background-size: contain;
+    pointer-events: none;
+}

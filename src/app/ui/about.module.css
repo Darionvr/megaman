@@ -1,0 +1,130 @@
+.subtitle {
+    width: 100%;
+    background: linear-gradient(0deg, #ffc100 35%, #ffd245 36%, #ffd245 64%, #ffc100 65%);
+    background-clip: text;
+    color: transparent;
+    font-size: min(1.6vw, 32px);
+    font-family: "BIZ UDPGothic", sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: min(.5vw, 20px);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+}
+
+.subtitle::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: min(1.9vw, 38px);
+    background-repeat: no-repeat;
+    background-image: url(/images/bg_h2_ruby_left.svg);
+    background-position: 100%;
+}
+
+.subtitle::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: min(1.9vw, 38px);
+    background-repeat: no-repeat;
+    background-image: url(/images/bg_h2_ruby_right.svg);
+    background-position: 0;
+}
+
+.wrap {
+    position: relative;
+    width: min(50.6vw, 972px);
+    padding: min(2.8vw, 55px) 0;
+    margin-inline: auto;
+}
+
+.wrap::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: min(2.8vw, 55px);
+    background: url(/images/bg_about_top.png) no-repeat top;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.wrap::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: min(2.8vw, 55px);
+    background: url(/images/bg_about_bottom.png) no-repeat bottom;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.inner {
+    width: 100%;
+    height: fit-content;
+    background: url(/images/bg_about_inner.png) repeat-y 50%;
+    background-size: 100% auto;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.wrap_text {
+    position: relative;
+    width: min(39.5vw, 760px);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    z-index: 3;
+    font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.wrap_text p {
+    margin-bottom: min(1.5vw, 30px);
+    padding-top: min(1.3vw, 26px);
+    text-align: left;
+    color: #ffff;
+}
+
+.wrap_text h3 {
+    margin-bottom: min(1vw, 20px);
+    font-size: min(1.8vw, 36px);
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    filter: drop-shadow(0 0 16px rgb(0, 217, 255)) drop-shadow(0 0 4px rgb(0, 217, 255));
+}
+
+.img_left {
+    width: min(17.7083333333vw, 340px);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: -30%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.img_right {
+    width: min(20.8vw, 400px);
+    height: min(27.6vw, 530px);
+    bottom: max(-.5rem, -50px);
+    right: -30%;
+    position: absolute;
+    z-index: 2;
+
+    img {
+        width: 100%;
+    }
+}
+
