@@ -1,4 +1,6 @@
-declare global {
+import React from 'react';
+
+declare module 'react' {
   namespace JSX {
     interface IntrinsicElements {
       "swiper-container": React.DetailedHTMLProps<
@@ -17,6 +19,7 @@ declare global {
         "thumbs-swiper"?: string | HTMLElement;
         "watch-slides-progress"?: boolean | string;
         style?: React.CSSProperties;
+        class?: string;
       };
 
       "swiper-slide": React.DetailedHTMLProps<
@@ -24,6 +27,7 @@ declare global {
         HTMLElement
       > & {
         style?: React.CSSProperties;
+        
       };
     }
   }
