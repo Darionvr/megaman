@@ -28,7 +28,7 @@ export const Characters = () => {
 
           <swiper-container
             
-            class={`mySwiper ${styles.swiper}`}
+            class={`mySwiper`}
             ref={swiperRef}
             space-between={30}
             navigation="true"
@@ -57,11 +57,11 @@ export const Characters = () => {
             ))}
           </swiper-container>
           <swiper-container ref={thumbsRef}
-            class="thumbs"
+            class={`thumbs`}
             space-between={10}
             slides-per-view={5}
             watch-slides-progress="true"
-           style={{ width: "min(47.9vw, 920px)", display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "min(.8vw, 16px)", marginInline: "auto" }}>
+           >
  
             {data.map((item) => (
               <swiper-slide key={`thumb-${item.id}`} >
