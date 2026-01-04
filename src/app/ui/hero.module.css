@@ -162,6 +162,7 @@
     background-size: auto 100%;
     background-position: 50%;
     transform-origin: center bottom;
+    background-repeat: no-repeat;
 }
 
 .wishlist_title {
@@ -247,7 +248,7 @@
     justify-content: right;
 
     p {
-    font-family: "BIZ UDPGothic", sans-serif;
+        font-family: "BIZ UDPGothic", sans-serif;
         font-weight: 700;
         text-transform: uppercase;
     }
@@ -322,5 +323,119 @@
 
     .hover_off {
         opacity: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        width: 100%;
+        height: fit-content;
+        aspect-ratio: unset;
+        background-size: 100% auto;
+        background-position: top;
+    }
+
+    .main_visual {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+
+
+    }
+
+    .main_visual picture img {
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper {
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        min-height: unset;
+    }
+
+    .mv_left {
+        width: 100%;
+        margin-top: min(-40vw, -150px);
+    }
+
+    .text_copy {
+        width: 100%;
+        margin-bottom: min(4vw, 15px);
+        padding-bottom: min(5.3vw, 20px);
+        font-size: min(6.4vw, 24px);
+    }
+    .bottom{
+            -webkit-text-stroke: min(1.6vw,6px) #fff;
+    }
+
+    .mv_right {
+        display: none;
+    }
+
+    .wishlist {
+        width: 90%;
+        height: fit-content;
+        aspect-ratio: 632/802;
+        padding: min(12.8vw, 48px) min(10.1333333333vw, 38px) min(11.4666666667vw, 43px);
+        background-image: url(/images/frame_wishlist___sp.png);
+        background-size: 100% auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .denpakun {
+        width: min(26.6666666667vw, 100px);
+        height: min(26.6666666667vw, 100px);
+        top: -13vw;
+        left: -8vw;
+    }
+
+    .wishlist_title {
+        font-size: min(7.4vw, 28px);
+        margin-bottom: min(5.3vw, 20px);
+    }
+
+    .wishlist_list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+
+        li {
+            width: 98%;
+            height: fit-content;
+            aspect-ratio: 242/48;
+        }
+
+        a {
+            font-size: min(3.7vw, 14px);
+        }
+    }
+
+    .mv_center {
+        margin: min(1.6vw, 6px) 0;
+
+        p {
+            font-size: min(6.4vw, 24px);
+        }
+    }
+
+    .bg_effect {
+        height: min(112vw, 420px);
+    }
+
+    .hero {
+        background-image: url(/images/bg_mv_sp.png);
+        background-size: 100% auto;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    .bg_effect video{
+        height: auto;
     }
 }

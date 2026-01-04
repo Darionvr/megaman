@@ -66,7 +66,7 @@
     overflow: hidden;
     margin-left: 1vw;
     box-shadow: min(.2vw, 4px) min(.2vw, 4px) 0 0 rgba(0, 0, 0, .45);
-    font-family:  "BIZ UDPGothic", sans-serif;
+    font-family: "BIZ UDPGothic", sans-serif;
     font-weight: 700;
 
     span:last-child {
@@ -108,4 +108,27 @@
     100% {
         left: 100%;
     }
+}
+
+@media (max-width: 767px) {
+    .platforms{
+        width: 100%;
+    }
+    .platforms ul {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        box-sizing: border-box;
+        padding-block: 1rem;
+    }
+    .platforms ul li{
+    width: 100%;
+    }
+    .preorder_container{
+        display: none;
+    }
+    .preorder{
+        display: none;
+    }
+   
 }
