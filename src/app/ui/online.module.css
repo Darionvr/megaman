@@ -157,7 +157,8 @@
         box-shadow: 4px 4px 0 0 rgba(0, 0, 0, .45);
         position: relative;
     }
-    img{
+
+    img {
         width: 100%;
     }
 }
@@ -173,4 +174,57 @@
     background: url(/images/icon_zoom.svg) no-repeat 50%;
     background-size: contain;
     pointer-events: none;
+}
+
+@media (max-width:767px) {
+    .wrap {
+        width: 90%;
+        min-height: unset;
+        position: unset;
+        margin-top: min(5.33vw, 30px);
+        ;
+    }
+
+    .img_left {
+        width: min(23.7vw, 89px);
+        height: fit-content;
+        top: -2%;
+        bottom: unset;
+        left: 3%;
+    }
+
+    .text {
+        width: 100%;
+        margin-bottom: min(5.3vw, 20px);
+        font-size: min(4.2vw, 16px);
+        letter-spacing: min(.015rem, 1.5px);
+        margin-top: min(5.33vw, 30px);
+        padding-block: 2vh;
+    }
+
+    .img_right {
+        width: min(72vw, 270px);
+        height: min(79.4vw, 298px);
+        margin-bottom: min(5.33vw, 20px);
+        position: relative;
+        bottom: unset;
+        right: unset;
+        margin-inline: auto;
+    }
+
+    .img_list {
+        width: 90%;
+        flex-direction: column;
+        gap: min(5.3vw, 20px);
+        order: 1;
+    }
+
+    .img_list div {
+        width: 100%;
+    }
+
+    .img_list div::after {
+        width: min(13.8vw, 52px);
+        height: min(6.4vw, 24px);
+    }
 }

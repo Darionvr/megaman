@@ -6,6 +6,7 @@
     "picture": "pic_character01.webp",
     "backgroundColor": "#0072ff",
     "backgroundImage": "url('/images/characters/backgrounds/bg_character01_pc.svg')",
+    "backgroundImageMobile": "url('/images/characters/backgrounds/bg_character01_sp.svg')",
     "thumbnail": "thumb_character01.png"
   },
   {
@@ -15,6 +16,7 @@
     "picture": "pic_character11.webp",
     "backgroundColor": "#009",
     "backgroundImage": "url('/images/characters/backgrounds/bg_character11_pc.svg')",
+    "backgroundImageMobile": "url('/images/characters/backgrounds/bg_character11_sp.svg')",
     "thumbnail": "thumb_character11.png"
   },
   {
@@ -24,6 +26,7 @@
     "picture": "pic_character02.webp",
     "backgroundColor": "#ec4d5d",
     "backgroundImage": "url('/images/characters/backgrounds/bg_character02_pc.svg')",
+    "backgroundImageMobile": "url('/images/characters/backgrounds/bg_character02_sp.svg')",
     "thumbnail": "thumb_character02.png"
   },
   {
@@ -33,6 +36,7 @@
     "picture": "pic_character03.webp",
     "backgroundColor": "#fccd10",
     "backgroundImage": "url('/images/characters/backgrounds/bg_character03_pc.svg')",
+    "backgroundImageMobile": "url('/images/characters/backgrounds/bg_character03_sp.svg')",
     "thumbnail": "thumb_character03.png"
   },
   {
@@ -42,6 +46,7 @@
     "picture": "pic_character04.webp",
     "backgroundColor": "#e65000",
     "backgroundImage": "url('/images/characters/backgrounds/bg_character04_pc.svg')",
+    "backgroundImageMobile": "url('/images/characters/backgrounds/bg_character04_sp.svg')",
     "thumbnail": "thumb_character04.png"
   }
 ]

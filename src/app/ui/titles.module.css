@@ -60,3 +60,25 @@
     background-position: bottom;
     background-size: auto 100%;
 }
+
+@media (max-width:767px) {
+    .title{
+            height: min(26.6vw,100px);
+    margin-bottom: min(2.1vw,8px);
+    }
+    .left_line, .right_line{
+        height: min(25.8vw,97px);
+    }
+    .text{
+            height: min(25.8vw,97px);
+    background-size: auto min(5.3vw,20px);
+    font-size: min(9.6vw,36px);
+    }
+    .text::before{
+        height: min(5.3vw,20px);
+    }
+    .text span{
+            line-height: 2.4;
+    font-size: min(9.6vw,36px);
+    }
+}
